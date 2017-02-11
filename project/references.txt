@@ -1,0 +1,5 @@
+References:
+
+Udacity - Introduction to Machine Learning Course
+https://en.wikipedia.org/wiki/Enron_scandal
+

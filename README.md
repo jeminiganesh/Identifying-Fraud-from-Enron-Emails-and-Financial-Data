@@ -4,6 +4,9 @@ In 2000, Enron was one of the largest companies in the United States. By 2002, i
 </p>
 
 <p>
-In this project, I used machine learning to identify persons of interest (POI) based on financial and email data made public as a result of the Enron scandal. The POI is labeled list of individuals who were indicted, reached a settlement or plea deal with the government, or testified in exchange for prosecution immunity. 
+In this project, I used machine learning to identify persons of interest (POI) based on financial and email data made public as a result of the Enron scandal. The POI is labeled list of individuals who were indicted, reached a settlement or plea deal with the government, or testified in exchange for prosecution immunity.
 </p>
 
+<h2> Code Files </h2>
+project/poi.id.py -  This file has the code to try out different classifiers to evaluate the performance
+project/tester.py -  Validates the chosen classifiers

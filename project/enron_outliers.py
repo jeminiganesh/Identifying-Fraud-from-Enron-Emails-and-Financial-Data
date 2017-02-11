@@ -28,30 +28,23 @@ def find_highest_value(data_dict,feature):
     return highest_value_name
 
 
-def plot_dict_data(data_dict,features):
+def plot_dict_data(data_dict,features,desc):
     data = featureFormat(data_dict, features)
     df = pd.DataFrame(data, columns=features)
-    sns.boxplot(x=df)
-    plt.xticks(rotation=45)
-    plt.show()
+    sns.boxplot(x=df,orient='h')
+    plt.tight_layout()
+    plt.savefig(desc)
 
 
 def outlierCleaner(data_dict, features):
-    plot_dict_data(data_dict,features)
-    key = find_highest_value(data_dict,'total_payments')
+    plot_dict_data(data_dict, features, 'enron_outliers_fig1')
     print ' ---- Outliers ---- '
+    key = find_highest_value(data_dict,'total_payments')
     if key in data_dict:
         del data_dict[key]
         print ' Deleted : ',key
-
-    plot_dict_data(data_dict,features)
     return data_dict
 
 
-
-# if __name__ == "__main__":
-#     data_dict = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
-#     features = ["salary", "bonus", 'total_stock_value','total_payments']
-#     outlierCleaner(data_dict,features)
 
 
