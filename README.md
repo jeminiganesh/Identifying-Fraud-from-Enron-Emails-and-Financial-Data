@@ -8,5 +8,9 @@ In this project, I used machine learning to identify persons of interest (POI) b
 </p>
 
 <h2> Code Files </h2>
+<p>
 project/poi.id.py -  This file has the code to try out different classifiers to evaluate the performance
+</p>
+<p>
 project/tester.py -  Validates the chosen classifiers
+</p>
